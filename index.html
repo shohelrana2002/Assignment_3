@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey's</title>
+    <!-- framework link tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9203b352ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font add  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#FF4240",
+              "primary-col": "#131318",
+              "dark-col": "#424247",
+              "white-col": "rgba(19, 19, 24, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body style="font-family: 'Manrope', sans-serif">
+    <header class="container mx-auto my-6 font-extrabold">
+      <!-- nav bar start now  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              <li>
+                <!-- <a>Parent</a> -->
+                <!-- <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul> -->
+              </li>
+              <!-- <li><a>Item 3</a></li> -->
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl text-primary-col-text"
+            >Hockey<span class="text-primary-color space-x-0">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="text-primary-color font-bold">Home</a>
+            </li>
+            <li><a class="text-dark-col">About</a></li>
+            <li><a class="text-dark-col">Pages</a></li>
+            <li><a class="text-dark-col">Blog</a></li>
+            <li><a class="text-dark-col">Contact</a></li>
+            <!-- <li>
+              <details>
+                <summary>Parent</summary>
+            
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li> -->
+            <!-- <li><a>Item 3</a></li> -->
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass hidden md:block mr-5"></i>
+          <a class="btn bg-primary-color text-white font-bold">Get Ticket</a>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <section class="container mx-auto my-10">
+        <!-- Professional Hockeys Club start -->
+        <hr class="bg-[rgba(19, 19, 24, 0.20);] pt-4" />
+        <div class="text-center space-y-5">
+          <h3 class="text-4xl font-extrabold text-primary-col">
+            Professional Hockeys Club
+          </h3>
+          <p class="font-medium text-dark-col md:px-64">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+          <hr class="pb-4 bg-[rgba(19, 19, 24, 0.20);]" />
+        </div>
+        <!-- rounded box class  -->
+        <!-- radial process fast -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center mx-4 md:px-4 mt-6"
+        >
+          <div>
+            <div
+              class="radial-progress text-primary-color"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="text-black"> 87%</span>
+            </div>
+            <h1 class="text-primary-col font-semibold text-[20px]">
+              Prayer Facility
+            </h1>
+            <p class="text-white-col mt-1">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="text-black"> 95%</span>
+            </div>
+            <h1 class="text-primary-col font-semibold text-[20px]">
+              Experienced Coach
+            </h1>
+            <p class="text-white-col mt-1">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="text-black"> 90%</span>
+            </div>
+            <h1 class="text-primary-col font-semibold text-[20px]">
+              Senior Player
+            </h1>
+            <p class="text-white-col mt-1">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+          <div>
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="text-black"> 80%</span>
+            </div>
+            <h1 class="text-primary-col font-semibold text-[20px]">
+              Training Ground
+            </h1>
+            <p class="text-white-col mt-1">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Program Sections  -->
+      <hr class="bg-[rgba(19, 19, 24, 0.20);] pt-4" />
+      <section class="my-5">
+        <div class="text-center">
+          <h2 class="text-4xl mt-3 font-extrabold text-primary-col">
+            Program Sections
+          </h2>
+          <p class="font-medium text-dark-col mt-3 md:px-64">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="flex flex-col mx-2 mt-7 md:mt-20 md:mb-5 gap-8 md:flex-row">
+          <!-- card1 -->
+          <div
+            class="hero rounded-2xl flex-1"
+            style="background-image: url('pic/2.png')"
+          >
+            <div class="hero-overlay bg-[#13131880] rounded-2xl"></div>
+            <div class="hero-content text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 mt-20 text-white text-3xl font-extrabold">
+                  Junior Program
+                </h1>
+                <p class="mb-5 font-medium text-white pr-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna. Id et sed euismod natoque
+                  amet nunc morbi nulla. Tortor congue sed et in.
+                </p>
+                <button
+                  class="btn bg-primary-color border-none text-white px-5"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card1 -->
+          <div
+            class="hero rounded-2xl object-cover flex-1"
+            style="background-image: url('pic/2.png')"
+          >
+            <div class="hero-overlay bg-[#13131880] rounded-2xl"></div>
+            <div class="hero-content text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 mt-20 text-white text-3xl font-extrabold">
+                  Hello there
+                </h1>
+                <p class="mb-5 font-medium text-white pr-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna. Id et sed euismod natoque
+                  amet nunc morbi nulla. Tortor congue sed et in.
+                </p>
+                <button
+                  class="btn bg-primary-color border-none text-white px-5"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- singel pic section -->
+      <section class="mb-16 mt-9">
+        <div
+          class="hero w-full bg-center rounded-2xl"
+          style="background-image: url('pic/4.png')"
+        >
+          <div class="hero-overlay bg-[#13131880] rounded-2xl"></div>
+          <div class="text-neutral-content">
+            <div class="mt-40 mb-2 md:mt-80 md:mb-12">
+              <h1
+                class="text-3xl sm:mt-20 font-extrabold text-white my-4 m-4 sm-4 md:mx-0"
+              >
+                Professional Program
+              </h1>
+              <p class="font-medium text-white md:w-5/12 m-4 sm-4 md:m-0">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button
+                class="btn bg-primary-color border-none text-white m-4 sm-4 md:m-0 md:mt-6 md:mb-24 px-5"
+              >
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our New Products section  -->
+      <section class="my-40">
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-primary-col">
+            Our New Products
+          </h2>
+          <p class="font-medium text-dark-col mt-3 md:px-64">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin. .
+          </p>
+        </div>
+        <!-- card design start now -->
+        <div class="grid grid-cols-1 mt-12 md:grid-cols-2 gap-6">
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero border bg-[#FFF] rounded-2xl">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="pic/Rectangle 4.png" class="w-full rounded-lg shadow" />
+              <div>
+                <div class="flex gap-6">
+                  <p><i class="fa-solid text-primary-color fa-star"></i>5.0</p>
+                  <p><i class="fa-regular fa-eye"></i>20</p>
+                  <p><i class="fa-regular fa-heart"></i>200</p>
+                </div>
+                <h1 class="text-xl font-extrabold text-primary-col">
+                  World Cup Flags Football
+                </h1>
+                <p class="py-1 font-medium text-white-col">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <div class="flex justify-between">
+                  <h3 class="text-[#FF4240] text-xl font-extrabold">
+                    Price - $22.00
+                  </h3>
+                  <p class="text-white-col font-medium">
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- client question strat  -->
+      <section>
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-primary-col">
+            Clients Question
+          </h2>
+          <p class="font-medium text-dark-col mb-6 md:px-64">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <!-- question strat now  -->
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <div class="flex-1 flex sm:justify-center">
+            <img class="w-6/5" src="pic/qution.png" alt="" />
+          </div>
+          <div class="flex-1">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-bold text-primary-col">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+                <hr class="bg-[rgba(19, 19, 24, 0.20);] pt-4" />
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+                <hr class="bg-[rgba(19, 19, 24, 0.20);] pt-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Get In Touch strat  -->
+      <section>
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-primary-col">Get In Touch</h2>
+          <p class="font-medium text-dark-col mb-6 md:px-64">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col mx-3 md:mx-0 md:flex-row gap-2 md:gap-12">
+              <div class="item1">
+                <label class="block font-bold my-1 text-xl" for="name"
+                  >Enter Your Name</label
+                >
+                <input
+                  placeholder="Enter your full name"
+                  class="input input-bordered input-primary text-[#13131808] bg-[#13131808] w-full"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <label class="block font-bold my-1 text-xl" for="name">
+                  Your Gamail</label
+                >
+                <input
+                  placeholder="Enter your email"
+                  class="input input-bordered input-primary text-[#13131808] bg-[#13131808] w-full"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="item2">
+                <label class="block font-bold my-1 text-xl" for="name"
+                  >Subject</label
+                >
+                <input
+                  placeholder="Enter your subject"
+                  class="input input-bordered input-primary text-[#13131808] bg-[#13131808] w-full"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <label class="block font-bold my-1 text-xl" for="name"
+                  >Phone Number</label
+                >
+                <input
+                  placeholder="Enter your phone number"
+                  class="input input-bordered input-primary text-[#13131808] bg-[#13131808] w-full"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+            </div>
+            <div class="item3 mt-2 mx-2">
+              <label class="block font-bold my-1 text-xl" for="name"
+                >Masej</label
+              >
+              <textarea
+                class="w-full md:w-[85%] p-4 bg-[#13131808] text-[#13131808]"
+                name=""
+                id=""
+                cols="30"
+                placeholder="Enter Your Masej"
+                rows="10"
+              >
+              </textarea>
+            </div>
+            <div class="item4 mt-3">
+              <button
+                class="btn bg-[#FF4240] text-white my-4 ml-0 md:ml-2 w-full md:w-[84%]"
+                type="button"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
